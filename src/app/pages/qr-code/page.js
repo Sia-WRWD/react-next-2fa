@@ -11,8 +11,8 @@ export default function Page() {
     const router = useRouter();
 
     // Get the secret from session storage
-    const secret = sessionStorage.getItem('secret') || '';
-    const email = sessionStorage.getItem('userEmail') || '';
+    const secret = typeof window !== 'undefined' ? sessionStorage.getItem('secret') || '' : '';
+    const email = typeof window !== 'undefined' ? sessionStorage.getItem('userEmail') || '' : '';
 
     // Generate OTP URI based on your application details
     const accountName = email; // Change this to the user's account name
