@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and utilizing Firebase for database along with a nodejs server to serve as a 2FA authenticator using speakeasy.
 
 ## Getting Started
 
@@ -34,3 +34,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Lesson Learnt:
+1. React Next utilizes folder as routing.
+2. Don't try to edit Layout.js, just utilize the page.js.
+3. In React Next, need to use "use client" if need to use useState. (https://stackoverflow.com/questions/74965849/youre-importing-a-component-that-needs-usestate-it-only-works-in-a-client-comp)
+4.
+
+# References:
+1. https://blog.devgenius.io/two-factor-authentication-with-node-js-and-express-secure-your-app-ca6de34a6fcb (2FA Guide)
+2. https://stackoverflow.com/questions/74421327/nextrouter-was-not-mounted-next-js (Next Navigation Issue)

@@ -25,3 +25,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+#about::-webkit-scrollbar {
+  display: none;
+}
+
+#about {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.register-text {
+  margin-top: 12px !important;
+}
