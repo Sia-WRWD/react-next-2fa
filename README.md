@@ -1,18 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and utilizing Firebase for database along with a nodejs server to serve as a 2FA authenticator using speakeasy.
+This is a simple React Nextjs application that showcases the implementation of 2 Factor Authentication (2FA) using the library, SpeakEasy and QRCode scan functionality that can directly be added into the Google Authenticator app. It's built with the objectives of first time exploring the react nextjs framework, 2FA (via SpeakEasy), and external APIs.
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- Registration
+- Login
+- QR Code Integration
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
