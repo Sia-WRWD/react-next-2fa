@@ -3,28 +3,62 @@ This is a simple React Nextjs application that showcases the implementation of 2
 ## Features
 - Registration
 - Login
-- QR Code Integration
+- 2 Factor Authentication (2FA)
+- QR Code - Google Authenticator Integration
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Prerequisites
+Make sure you have Node.js installed on your system (preferably the latest version). You can download it from Node.js official website.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Installation
+1. Clone the Repository
+```
+git clone https://github.com/Sia-WRWD/react-next-2fa.git
+cd react-next-2fa
+```
+2. Install Dependencies for Front-End
+```
+npm install
+```
+3. Install Dependencies for Back-End
+```
+cd server
+npm install
+```
+4. Setting up Firebase Environment Variables
+```
+// src/firebase.js
+import { initializeApp } from 'firebase/app';
 
-## Learn More
+const firebaseConfig = {
+    //Add your firebase's project configuration here.
+};
 
-To learn more about Next.js, take a look at the following resources:
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+export { app };
+```
+5. Create the "user" collection in Firestore.
+6. Enable the Sign In with Email and Password Authentication.
+7. Running the Front-End Application
+```
+npm start
+```
+This runs the application in development mode. Open http://localhost:3000 to view it in the browser.
+8. Running the Back-End Application
+```
+cd server
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Building for Production
+To build the app for production, run:
+```
+npm run build
+```
 
 # Lesson Learnt:
 1. React Next utilizes folder as routing.
